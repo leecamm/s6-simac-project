@@ -1,0 +1,20 @@
+#canvas::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #ffe7d3;
+}
+.canvas {
+  width: 350px;
+  height: 712px;
+  background: white;
+  color: white;
+  margin-left: 40%;
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.container {
+  padding: 0 10px 0 10px;
+}
