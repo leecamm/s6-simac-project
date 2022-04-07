@@ -2,8 +2,14 @@
   display: none;
 }
 body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body {
   background-color: #ffe7d3;
 }
+/* Desktop */
+
 .canvas {
   width: 350px;
   height: 712px;
@@ -17,4 +23,16 @@ body {
 
 .container {
   padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .canvas {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .canvas {
+    margin-left: 10%;
+  }
 }

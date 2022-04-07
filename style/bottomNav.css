@@ -16,3 +16,13 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
+.bottomNav a:hover {
+  filter: invert(12%) sepia(87%) saturate(3958%) hue-rotate(334deg)
+    brightness(88%) contrast(111%);
+}
+
+.bottomNav a.active {
+  filter: invert(12%) sepia(87%) saturate(3958%) hue-rotate(334deg)
+    brightness(88%) contrast(111%);
+}
