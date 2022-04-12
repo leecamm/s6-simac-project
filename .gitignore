@@ -6,3 +6,4 @@ temp/
 
 # ignore CI files 
 .github/
+.vscode/
