@@ -36,12 +36,6 @@ body {
   left: 10px;
 }
 
-#pagetitle {
-}
-.dividernavbar {
-  height: 15vh;
-}
-
 /* BOTTOM BAR */
 .bottom {
   position: fixed;
@@ -144,7 +138,7 @@ body {
 
 /* ACHIEVEMENT MODAL */
 
-#achmodal{
+.achmodal{
   position: fixed;
   background-color: white;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
@@ -175,4 +169,23 @@ body {
   
 #modalimg{
   width: 40%;
+}
+
+/* ACHIEVEMENT TO PROFILE MODAL */
+
+#profileachmodal{
+  /* display: flex; */
+}
+
+.achonprofilecontainer{
+  display: flex;
+  justify-content: center;
+}
+.achonprofile{
+  width: 15%;
+  margin: 10px;
+}
+
+#newaop{
+  width: 30%;
 }

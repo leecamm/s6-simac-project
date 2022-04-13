@@ -5,7 +5,7 @@ let Data = [
     category: "swipes",
     locked: "unlocked",
     image: "../static/achievementimages/educated.png",
-    explanation: "You have had your 10th lesson"
+    explanation: "You have had your 10th lesson",
   },
   {
     id: "2",
@@ -13,7 +13,7 @@ let Data = [
     category: "swipes",
     locked: "unlocked",
     image: "../static/achievementimages/lesson.png",
-    explanation: "You gave your first lesson"
+    explanation: "You gave your first lesson",
   },
   {
     id: "3",
@@ -21,7 +21,7 @@ let Data = [
     category: "swipes",
     locked: "unlocked",
     image: "../static/achievementimages/profile.png",
-    explanation: "Your profile is complete"
+    explanation: "Your profile is complete",
   },
   {
     id: "4",
@@ -29,7 +29,7 @@ let Data = [
     category: "matches",
     locked: "unlocked",
     image: "../static/achievementimages/level10.png",
-    explanation: "You have reached level 10"
+    explanation: "You have reached level 10",
   },
   {
     id: "5",
@@ -37,7 +37,7 @@ let Data = [
     category: "matches",
     locked: "unlocked",
     image: "../static/achievementimages/reading.png",
-    explanation: "You have had your 5th lesson"
+    explanation: "You have had your 5th lesson",
   },
   {
     id: "6",
@@ -45,7 +45,7 @@ let Data = [
     category: "matches",
     locked: "unlocked",
     image: "../static/achievementimages/books.png",
-    explanation: "You have had your first lesson"
+    explanation: "You have had your first lesson",
   },
   {
     id: "7",
@@ -53,7 +53,7 @@ let Data = [
     category: "profile",
     locked: "locked",
     image: "../static/achievementimages/coins.png",
-    explanation: "You earned 1000 Educoins"
+    explanation: "You earned 1000 Educoins",
   },
   {
     id: "8",
@@ -61,7 +61,7 @@ let Data = [
     category: "profile",
     locked: "locked",
     image: "../static/achievementimages/profile.png",
-    explanation: "Your profile is completed"
+    explanation: "Your profile is completed",
   },
   {
     id: "9",
@@ -69,7 +69,7 @@ let Data = [
     category: "profile",
     locked: "locked",
     image: "../static/achievementimages/coins.png",
-    explanation: "You earned 2000 Educoins"
+    explanation: "You earned 2000 Educoins",
   },
   {
     id: "10",
@@ -77,6 +77,14 @@ let Data = [
     category: "profile",
     locked: "locked",
     image: "../static/achievementimages/level10.png",
-    explanation: "You reached level 20"
-  }
+    explanation: "You reached level 20",
+  },,
+  {
+    id: "11",
+    title: "TEST",
+    category: "TEST",
+    locked: "locked",
+    image: "../static/achievementimages/test.png",
+    explanation: "TEST",
+  },
 ];
