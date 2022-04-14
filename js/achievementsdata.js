@@ -78,7 +78,8 @@ let Data = [
     locked: "locked",
     image: "../static/achievementimages/level10.png",
     explanation: "You reached level 20",
-  },,
+  },
+  ,
   {
     id: "11",
     title: "TEST",
@@ -88,3 +89,9 @@ let Data = [
     explanation: "TEST",
   },
 ];
+
+let AchievementsOnProfile = {
+  img1: "../static/achievementimages/books.png",
+  img2: "../static/achievementimages/educated.png",
+  img3: "../static/achievementimages/lesson.png",
+};

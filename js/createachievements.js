@@ -15,7 +15,6 @@ const createAchievements = () => {
 
     achdiv.className = "ach";
     if (element.locked == "locked") {
-      console.log(element.title + " is " + "locked");
       achdiv.classList.add("locked");
     }
 
@@ -24,6 +23,10 @@ const createAchievements = () => {
       modalimg.src = element.image;
       modaltitle.innerHTML = element.title;
       modalexplanation.innerHTML = element.explanation;
+      // open aopmodal
+      aopbutton.onclick = () => {
+        OpenAOPModal(element.image);
+      };
     };
 
     achtitle.className = "achtitle";
@@ -31,14 +34,6 @@ const createAchievements = () => {
 
     achimg.className = "achimg";
     achimg.src = element.image;
-
-    // open aopmodal
-    aopbutton.onclick = () => {
-      newaop.src = element.image;
-      OpenAOPModal();
-    };
-    
-    console.log(element.image);
 
     // append all
     achdiv.appendChild(achtitle);
@@ -58,13 +53,47 @@ let aop2 = document.getElementById("aop2");
 let aop3 = document.getElementById("aop3");
 let newaop = document.getElementById("newaop");
 
-const OpenAOPModal = () => {
-  aop1.src = "../static/achievementimages/books.png";
-  aop2.src = "../static/achievementimages/educated.png";
-  aop3.src = "../static/achievementimages/lesson.png";
+const OpenAOPModal = (image) => {
+  aop1.src = AchievementsOnProfile.img1;
+  aop2.src = AchievementsOnProfile.img2;
+  aop3.src = AchievementsOnProfile.img3;
+  newaop.src = image;
 
-  // newaop.src = image;
-
+  let newimage;
+  let oldimage;
   aopmodal.style.display = "flex";
+  aop1.onclick = () => {
+    newimage = image;
+    oldimage = AchievementsOnProfile.img1;
+    // ach on profile & db -> new image var
+    newaop.src = oldimage;
+
+    // new image var -> db & ach on profile 
+    aop1.src = newimage;
+    AchievementsOnProfile.img1 = newimage;
+    image = oldimage;
+  };
+  aop2.onclick = () => {
+    newimage = image;
+    oldimage = AchievementsOnProfile.img2;
+    // ach on profile & db -> new image var
+    newaop.src = oldimage;
+
+    // new image var -> db & ach on profile 
+    aop2.src = newimage;
+    AchievementsOnProfile.img2 = newimage;
+    image = oldimage;
+  };
+  aop3.onclick = () => {
+    newimage = image;
+    oldimage = AchievementsOnProfile.img3;
+    // ach on profile & db -> new image var
+    newaop.src = oldimage;
+
+    // new image var -> db & ach on profile 
+    aop3.src = newimage;
+    AchievementsOnProfile.img3 = newimage;
+    image = oldimage;
+  };
 };
 createAchievements();
