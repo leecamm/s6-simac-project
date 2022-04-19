@@ -11,9 +11,9 @@
 
 <body>
     <div id="achcontainer">
-       <!-- loaded achievement Data goes here -->
+        <!-- loaded achievement Data goes here -->
     </div>
-        <!-- ACHIEVEMENT MODAL -->
+    <!-- ACHIEVEMENT MODAL -->
 
     <div id="achmodal" class="achmodal">
         <img id="modalimg">
@@ -41,7 +41,10 @@
     <div class="achnavbar">
         <a id="backbutton" onclick="history.back()">&lt</a>
         <p id="pagetitle">Achievements</p>
-        <p>Balance: 100 Educoins</p>
+        <div id="balancediv">
+            <p id="balancetext">Balance</p>
+            <p id="balance">150 Educoins</p>
+        </div>
     </div>
 
 
@@ -62,4 +65,5 @@
 </body>
 <script src="../js/achievementsdata.js"></script>
 <script src="../js/createachievements.js"></script>
+
 </html>

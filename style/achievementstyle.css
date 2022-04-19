@@ -36,6 +36,15 @@ body {
   left: 10px;
 }
 
+#balancediv{
+
+}
+#balancetext{
+  font-size: 13px;
+  font-style: italic;
+}
+
+
 /* BOTTOM BAR */
 .bottom {
   position: fixed;
