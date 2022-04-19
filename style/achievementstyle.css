@@ -1,0 +1,200 @@
+body {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* display: flex; */
+}
+/* NAVBAR */
+.achnavbar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 15vh;
+  background: rgb(209, 84, 143);
+  background: linear-gradient(
+    133deg,
+    rgba(209, 84, 143, 1) 0%,
+    rgba(112, 120, 255, 1) 100%
+  );
+  border-bottom-left-radius: 30% 25%;
+  border-bottom-right-radius: 30% 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: large;
+}
+
+.achnavbar p {
+  margin: 0px;
+}
+
+#backbutton {
+  margin: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+#balancediv{
+
+}
+#balancetext{
+  font-size: 13px;
+  font-style: italic;
+}
+
+
+/* BOTTOM BAR */
+.bottom {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 18vh;
+  background: rgb(209, 84, 143);
+  background: linear-gradient(
+    133deg,
+    rgba(209, 84, 143, 1) 0%,
+    rgba(112, 120, 255, 1) 100%
+  );
+  border-top-left-radius: 30% 25%;
+  border-top-right-radius: 30% 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: large;
+}
+
+.bottom p {
+  margin: 0px;
+}
+#progresstext {
+  margin-right: 50%;
+}
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 80%;
+  /* border: 6px solid #f4a261; */
+  background-color: white;
+  border-radius: 15px;
+}
+.progress .color {
+  /* position: absolute; */
+  background-color: rgb(55, 255, 115);
+  width: 140px;
+  height: 10px;
+  border-radius: 15px;
+}
+
+#currentlevelcontainer {
+  display: flex;
+  flex-direction: row;
+  /* width: 50%; */
+  height: 40%;
+  /* margin: 12px; */
+}
+
+#levelcontainer {
+  /* display: flex;
+  flex-direction: column; */
+}
+.levelimg {
+  margin: 0px;
+  height: 120%;
+  margin-right: 10px;
+}
+
+/* CONTENT */
+
+#achcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 16vh;
+  padding-bottom: 20vh;
+}
+.ach {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 40vw;
+  height: 25vw;
+  background-color: white;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  margin: 2vw;
+}
+
+.achimg {
+  height: 50%;
+  margin: 5px;
+}
+
+.achtitle {
+  margin: 0px;
+}
+
+.locked {
+  opacity: 0.5;
+}
+
+/* ACHIEVEMENT MODAL */
+
+.achmodal{
+  position: fixed;
+  background-color: white;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  height: 65vh;
+  width: 85vw;
+  top: 16vh;
+  left: 7.5vw;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.achbutton{
+  border: none;
+  background: rgb(209, 84, 143);
+  background: linear-gradient(
+    133deg,
+    rgba(209, 84, 143, 1) 0%,
+    rgba(112, 120, 255, 1) 100%
+  );
+  border-radius: 200px;
+  color: white;
+  padding: 7px 15px 7px 15px;
+}
+  
+#modalimg{
+  width: 40%;
+}
+
+/* ACHIEVEMENT TO PROFILE MODAL */
+
+#profileachmodal{
+  /* display: flex; */
+}
+
+.achonprofilecontainer{
+  display: flex;
+  justify-content: center;
+}
+.achonprofile{
+  width: 15%;
+  margin: 10px;
+}
+
+#newaop{
+  width: 30%;
+}

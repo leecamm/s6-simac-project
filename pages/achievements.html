@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/achievementstyle.css">
+    <title>Achievements</title>
+</head>
+
+<body>
+    <div id="achcontainer">
+        <!-- loaded achievement Data goes here -->
+    </div>
+    <!-- ACHIEVEMENT MODAL -->
+
+    <div id="achmodal" class="achmodal">
+        <img id="modalimg">
+        <p id="modaltitle"></p>
+        <button class="achbutton" id="achonprofile">Show on profile</button>
+        <p id="modalexplanation"></p>
+        <button class="achbutton" onclick="closeModal('achmodal')">Close</button>
+    </div>
+
+    <!-- ACHIEVEMENT TO PROFILE MODAL -->
+
+    <div id="aopmodal" class="achmodal">
+        <p>Currently on profile</p>
+        <div class="achonprofilecontainer">
+            <img class="achonprofile" id="aop1">
+            <img class="achonprofile" id="aop2">
+            <img class="achonprofile" id="aop3">
+        </div>
+        <p>Click icon to switch with</p>
+        <img id="newaop">
+        <button class="achbutton" onclick="closeModal('aopmodal')">Close</button>
+    </div>
+
+    <!-- HEADER -->
+    <div class="achnavbar">
+        <a id="backbutton" onclick="history.back()">&lt</a>
+        <p id="pagetitle">Achievements</p>
+        <div id="balancediv">
+            <p id="balancetext">Balance</p>
+            <p id="balance">150 Educoins</p>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="bottom">
+        <div id="currentlevelcontainer">
+            <img class="levelimg" src="../static/achievementimages/level.png">
+            <div id="levelcontainer">
+                <p>Current level</p>
+                <p>12</p>
+            </div>
+        </div>
+        <p id="progresstext">Progress</p>
+        <div class="progress">
+            <div class="color"></div>
+        </div>
+    </div>
+</body>
+<script src="../js/achievementsdata.js"></script>
+<script src="../js/createachievements.js"></script>
+
+</html>
