@@ -75,7 +75,7 @@ body {
 }
 .progress .color {
   /* position: absolute; */
-  background-color: rgb(172, 255, 104);
+  background-color: rgb(55, 255, 115);
   width: 140px;
   height: 10px;
   border-radius: 15px;

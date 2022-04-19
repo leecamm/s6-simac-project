@@ -79,15 +79,6 @@ let Data = [
     image: "../static/achievementimages/level10.png",
     explanation: "You reached level 20",
   },
-  ,
-  {
-    id: "11",
-    title: "TEST",
-    category: "TEST",
-    locked: "locked",
-    image: "../static/achievementimages/test.png",
-    explanation: "TEST",
-  },
 ];
 
 let AchievementsOnProfile = {
