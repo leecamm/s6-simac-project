@@ -74,10 +74,74 @@ body {
 
 .achievementModal {
   display: flex;
-  width: 100%;
-  border: 1px solid black;
+  justify-content: space-around;
+  padding: 20px 10px 20px 10px;
+  margin: 15px 10px 10px 10px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
 }
 
 .achievementImg {
-  width: 30%;
+  width: 26%;
+}
+
+/* LEVEL SECTION */
+.levelSection {
+  margin-top: 30px;
+  margin-right: 10px;
+}
+.levelText {
+  display: flex;
+  justify-content: space-between;
+}
+
+#progressText {
+  font-size: 16px;
+  font-style: italic;
+}
+#progressTextExp {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.progress {
+  margin-top: 15px;
+  height: 15px;
+  width: 100%;
+  border: 1px solid #1f1f1f;
+  background-color: white;
+  border-radius: 15px;
+}
+.progress .color {
+  background-color: #c7002b;
+  width: 70%;
+  height: 13px;
+  border-radius: 15px;
+}
+
+/* NAVIGATION SECTION */
+.navigationSection {
+  margin: 30px 1px 100px 1px;
+  border-radius: 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-image: linear-gradient(#f3f3f3, white);
+}
+
+.navigationModal {
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  justify-content: space-between;
+}
+
+.rounded-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+a #buttonText {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #8a8a8a;
+  text-decoration: none;
 }
