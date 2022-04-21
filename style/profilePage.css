@@ -1,0 +1,83 @@
+body {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* display: flex; */
+}
+
+/* HEADER */
+.profileNavbar {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+#backbutton {
+  margin-left: 10px;
+  position: fixed;
+}
+
+#pagetitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.content {
+  padding-top: 10vh;
+}
+
+/* INFO SECTION */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#name {
+  padding-top: 10px;
+}
+#role {
+  padding-top: 5px;
+  font-size: 20px;
+  color: #c7002b;
+}
+#description {
+  padding-top: 6px;
+  font-size: 16px;
+}
+
+.avatar {
+  width: 188px;
+  height: 188px;
+  margin: 10px;
+  border: 10px solid #c7002b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ACHIEVEMENT SECTION */
+.achievementSection {
+  margin: 40px 20px 20px 20px;
+}
+#achievementText {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.achievementModal {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.achievementImg {
+  width: 30%;
+}

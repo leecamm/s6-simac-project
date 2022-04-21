@@ -4,7 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/profilePage.css" />
+
     <title>Profile</title>
   </head>
-  <body></body>
+  <body>
+    <!-- PROFILE PAGE -->
+    <!-- HEADER -->
+    <div class="profileNavbar">
+      <a id="backbutton" onclick="history.back()"
+        ><i class="bx bx-chevron-left bx-md"></i
+      ></a>
+      <p id="pagetitle">Profile</p>
+    </div>
+
+    <!-- PERSONAL INFO -->
+    <main class="content">
+      <div class="info">
+        <img
+          class="avatar"
+          src="https://www.pngkey.com/png/full/72-729716_user-avatar-png-graphic-free-download-icon.png"
+          alt="avatar"
+        />
+        <h1 id="name">Phineas</h1>
+        <h2 id="role">Front-end Developer</h2>
+        <p id="description">SIMAC - IT Department</p>
+      </div>
+
+      <!-- ACHIEVEMENT SECTION -->
+      <div class="achievementSection">
+        <p id="achievementText">Achievement on Profile</p>
+        <div class="achievementModal">
+          <img
+            class="achievementImg"
+            src="../static/achievementimages/level10.png"
+          />
+          <img
+            class="achievementImg"
+            src="../static/achievementimages/level10.png"
+          />
+          <img
+            class="achievementImg"
+            src="../static/achievementimages/level10.png"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- BOTTOM NAV -->
+    <footer>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="bx bx-home-alt nav__icon"></i>
+              <span class="nav__name">Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="bx bxs-hand-up nav__icon"></i>
+              <span class="nav__name">Swipe</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-calendar bx-sm nav__icon"></i>
+              <span class="nav__name">Calendar</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="bx bx-chat nav__icon"></i>
+              <span class="nav__name">Chat</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
