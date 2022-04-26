@@ -15,6 +15,7 @@
 
     <title>Teamnology</title>
   </head>
+
   <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
@@ -28,46 +29,72 @@
         <a href="./achievements.html">
           <img src="../static/icons/Achievement.png" alt="" class="nav__logo" />
         </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bxs-hand-up nav__icon"></i>
+                <span class="nav__name">Swipe</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-calendar bx-sm nav__icon"></i>
+                <span class="nav__name">Calendar</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="bx bx-chat nav__icon"></i>
+                <span class="nav__name">Chat</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
       <!--=============== YOUR CODE HERE ===============-->
+
+      <!--=============== HOME ===============-->
+      <section class="container section" id="home">
+        <h2 class="section__titl section_left">
+          Hi Colleague,
+          <h5>Welcome to the Teamnology App</h5>
+        </h2>
+      </section>
+      <section class="container section-small topic-intro" id="home">
+        <img
+          src="https://img.icons8.com/color/48/000000/fire-element--v1.png"
+        />
+        <span> Hot topics right now </span>
+      </section>
+      <section class="container section-small card-content" id="home">
+        <div class="card">
+          <div class="card-row">
+            <h3>Storytelling</h3>
+          </div>
+          <div class="card-row">
+            <p>Narrate the best stories</p>
+          </div>
+        </div>
+      </section>
+      <section class="container section-small topic-intro" id="home">
+        <img src="https://img.icons8.com/emoji/48/000000/rocket-emji.png" />
+        <span> Gaining popularity </span>
+      </section>
     </main>
 
-    <footer>
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="bx bx-home-alt nav__icon"></i>
-              <span class="nav__name">Home</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="bx bxs-hand-up nav__icon"></i>
-              <span class="nav__name">Swipe</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="bx bx-calendar bx-sm nav__icon"></i>
-              <span class="nav__name">Calendar</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">
-              <i class="bx bx-chat nav__icon"></i>
-              <span class="nav__name">Chat</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
     <!--=============== MAIN JS ===============-->
     <script src="../js/main.js"></script>
   </body>
