@@ -1,0 +1,144 @@
+/* main{
+    display: flex;
+    flex-direction: column;
+} */
+
+.devidertop {
+  height: 3rem;
+  margin: 10px;
+}
+.titles{
+    color: rgb(196, 0, 0);
+    margin: 10px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* MATCHES */
+#yourmatches {
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 10px 10px rgb(206, 206, 206);
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.match {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+}
+
+.matchimage {
+  width: 50px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: none;
+}
+
+/* CHAT */
+
+.chat {
+  display: flex;
+  background-color: rgb(244, 244, 244);
+  padding: 6px;
+  position: relative;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  align-items: center;
+}
+
+.chatpic {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+
+.chattext {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timesent {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* CHATMODAL */
+
+#chatmodal{
+    left: 100vw;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    position:fixed;
+    height: 90vh;
+    width: 100vw;
+    top: 0px;
+    transition: 0.2s ease;
+}
+
+#chatheader{
+    display: flex;
+    align-items: center;
+    height:10vh;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#backbuttonicon{
+    height: 30px;
+}
+
+#infopic{
+    margin: 10px;
+}
+#chatcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    margin:5px;
+    padding: 5px 12px 5px 12px;
+    border-radius: 12px 20px 20px 2px;
+    background-color: rgba(255, 0, 0, 0.378);
+    width:fit-content;
+}
+
+.sentmessage{
+    background-color: rgba(0, 255, 170, 0.326);
+    border-radius: 20px 12px 2px 20px;
+    align-self:flex-end;
+}
+
+#chatbox{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    background-color: rgb(240, 240, 240);
+    height: 35px;
+    width: 100vw;
+}
+
+#emojiicon{
+    margin: 10px;
+    height: 70%;
+}
+
+#chatinput{
+    width: 73vw;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+
+#sendicon{
+    position: absolute;
+    height: 20px;
+    right: 20px;
+}
