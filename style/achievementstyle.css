@@ -145,6 +145,15 @@ body {
   opacity: 0.5;
 }
 
+#expanddate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#expanddate p{
+  margin: 0px;
+}
+
 /* ACHIEVEMENT MODAL */
 
 .achmodal{

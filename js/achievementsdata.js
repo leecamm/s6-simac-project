@@ -6,6 +6,7 @@ let Data = [
     locked: "unlocked",
     image: "../static/achievementimages/educated.png",
     explanation: "You have had your 10th lesson",
+    date: "20-4-2022",
   },
   {
     id: "2",
@@ -14,6 +15,7 @@ let Data = [
     locked: "unlocked",
     image: "../static/achievementimages/lesson.png",
     explanation: "You gave your first lesson",
+    date: "20-4-2022",
   },
   {
     id: "3",
@@ -21,7 +23,8 @@ let Data = [
     category: "swipes",
     locked: "unlocked",
     image: "../static/achievementimages/profile.png",
-    explanation: "Your profile is complete",
+    explanation: "You completed your profile",
+    date: "20-4-2022",
   },
   {
     id: "4",
@@ -30,6 +33,7 @@ let Data = [
     locked: "unlocked",
     image: "../static/achievementimages/level10.png",
     explanation: "You have reached level 10",
+    date: "20-4-2022",
   },
   {
     id: "5",
@@ -38,6 +42,7 @@ let Data = [
     locked: "unlocked",
     image: "../static/achievementimages/reading.png",
     explanation: "You have had your 5th lesson",
+    date: "20-4-2022",
   },
   {
     id: "6",
@@ -46,6 +51,7 @@ let Data = [
     locked: "unlocked",
     image: "../static/achievementimages/books.png",
     explanation: "You have had your first lesson",
+    date: "20-4-2022",
   },
   {
     id: "7",
@@ -54,14 +60,16 @@ let Data = [
     locked: "locked",
     image: "../static/achievementimages/coins.png",
     explanation: "You earned 1000 Educoins",
+    date: "20-4-2022",
   },
   {
     id: "8",
-    title: "profile completed",
+    title: "Profile completed",
     category: "profile",
     locked: "locked",
     image: "../static/achievementimages/profile.png",
     explanation: "Your profile is completed",
+    date: "20-4-2022",
   },
   {
     id: "9",
@@ -70,6 +78,7 @@ let Data = [
     locked: "locked",
     image: "../static/achievementimages/coins.png",
     explanation: "You earned 2000 Educoins",
+    date: "20-4-2022",
   },
   {
     id: "10",
@@ -78,6 +87,7 @@ let Data = [
     locked: "locked",
     image: "../static/achievementimages/level10.png",
     explanation: "You reached level 20",
+    date: "20-4-2022",
   },
 ];
 
