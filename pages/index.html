@@ -1,104 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-  <!--=============== BOXICONS ===============-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../style/index.css" />
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="../style/index.css" />
+    <title>Teamnology</title>
+  </head>
 
-  <title>Teamnology</title>
-</head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#profile">
+          <img src="../static/icons/profile.png" alt="" class="nav__logo" />
+        </a>
+        <a href="./index.html">
+          <img src="../static/icons/SimacLogo.png" alt="" class="nav__logo" />
+        </a>
+        <a href="./achievements.html">
+          <img src="../static/icons/Achievement.png" alt="" class="nav__logo" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
 
-<body>
-  <!--=============== HEADER ===============-->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#profile">
-        <img src="../static/icons/profile.png" alt="" class="nav__logo" />
-      </a>
-      <a href="./index.html">
-        <img src="../static/icons/SimacLogo.png" alt="" class="nav__logo" />
-      </a>
-      <a href="./achievements.html">
-        <img src="../static/icons/Achievement.png" alt="" class="nav__logo" />
-      </a>
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="bx bx-home-alt nav__icon"></i>
-              <span class="nav__name">Home</span>
-            </a>
-          </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bxs-hand-up nav__icon"></i>
+                <span class="nav__name">Swipe</span>
+              </a>
+            </li>
 
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="bx bxs-hand-up nav__icon"></i>
-              <span class="nav__name">Swipe</span>
-            </a>
-          </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-calendar bx-sm nav__icon"></i>
+                <span class="nav__name">Calendar</span>
+              </a>
+            </li>
 
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="bx bx-calendar bx-sm nav__icon"></i>
-              <span class="nav__name">Calendar</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">
-              <i class="bx bx-chat nav__icon"></i>
-              <span class="nav__name">Chat</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!--=============== YOUR CODE HERE ===============-->
-
-    <!--=============== HOME ===============-->
-    <section class="container section" id="home">
-      <h2 class="section__titl section_left">
-        Hi Colleague,
-        <h5>Welcome to the Teamnology App</h5>
-      </h2>
-    </section>
-    <section class="container section-small topic-intro" id="home">
-      <img src="https://img.icons8.com/color/48/000000/fire-element--v1.png" /> <span>
-        Hot topics right now
-      </span>
-    </section>
-    <section class="container section-small card-content" id="home">
-      <div class="card">
-        <div class="card-row">
-          <h3>
-            Storytelling
-          </h3>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="bx bx-chat nav__icon"></i>
+                <span class="nav__name">Chat</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="card-row">
-          <p>
-            Narrate the best stories
-          </p>
+      </nav>
+    </header>
+
+    <main>
+      <!--=============== YOUR CODE HERE ===============-->
+
+      <!--=============== HOME ===============-->
+      <section class="container section" id="home">
+        <h2 class="section__titl section_left">
+          Hi Colleague,
+          <h5>Welcome to the Teamnology App</h5>
+        </h2>
+      </section>
+      <section class="container section-small topic-intro" id="home">
+        <img
+          src="https://img.icons8.com/color/48/000000/fire-element--v1.png"
+        />
+        <span> Hot topics right now </span>
+      </section>
+      <section class="container section-small card-content" id="home">
+        <div class="card">
+          <div class="card-row">
+            <h3>Storytelling</h3>
+          </div>
+          <div class="card-row">
+            <p>Narrate the best stories</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container section-small topic-intro" id="home">
-      <img src="https://img.icons8.com/emoji/48/000000/rocket-emji.png" /> <span>
-        Gaining popularity
-      </span>
-    </section>
-  </main>
+      </section>
+      <section class="container section-small card-content" id="home">
+        <div class="card">
+          <div class="card-row">
+            <h3>Storytelling 2</h3>
+          </div>
+          <div class="card-row">
+            <p>Narrate the best stories</p>
+          </div>
+          <div class="tags">
+            <div class="card-tags">
+              <p>New</p>
+            </div>
+            <div class="card-tags">
+              <p>Epic</p>
+            </div>
+            <div class="card-tags">
+              <p>Simac</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container section-small card-content" id="home">
+        <div class="card-event">
+          <div class="card-row">
+            <h3>Event</h3>
+          </div>
+          <div class="card-row">
+            <p>Some very long title</p>
+          </div>
+          <div class="tags">
+            <div class="card-tags">
+              <p>JOIN NOW</p>
+            </div>
+          </div>
+          <div class="tags">
+            <div class="card-tags">
+              <p>New</p>
+            </div>
+            <div class="card-tags">
+              <p>Epic</p>
+            </div>
 
-  <!--=============== MAIN JS ===============-->
-  <script src="../js/main.js"></script>
-</body>
+            <div class="card-tags">
+              <p>Simac</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container section-small topic-intro" id="home">
+        <img src="https://img.icons8.com/emoji/48/000000/rocket-emji.png" />
+        <span> Gaining popularity </span>
+      </section>
+    </main>
 
+    <!--=============== MAIN JS ===============-->
+    <script src="../js/main.js"></script>
+  </body>
 </html>
