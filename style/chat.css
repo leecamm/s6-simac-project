@@ -106,13 +106,13 @@
     margin:5px;
     padding: 5px 12px 5px 12px;
     border-radius: 12px 20px 20px 2px;
-    background-color: rgba(255, 0, 0, 0.378);
+    background-color: rgb(234, 234, 234);
     width:fit-content;
 }
 
 .sentmessage{
-    background-color: rgba(0, 255, 170, 0.326);
-    border-radius: 20px 12px 2px 20px;
+  background-color: rgba(255, 0, 0, 0.378);
+  border-radius: 20px 12px 2px 20px;
     align-self:flex-end;
 }
 
