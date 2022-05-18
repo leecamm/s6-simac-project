@@ -42,7 +42,7 @@
       <!-- ACHIEVEMENT SECTION -->
       <div class="achievementSection">
         <p id="achievementText">Achievement on Profile</p>
-        <div class="achievementModal">
+        <div class="achievementModal" class="open-modal" data-open="modal1">
           <img
             class="achievementImg"
             src="../static/achievementimages/level10.png"
@@ -56,6 +56,7 @@
             src="../static/achievementimages/educated.png"
           />
         </div>
+
         <!-- LEVEL SECTION -->
         <div class="levelSection">
           <div class="levelText">
@@ -67,6 +68,39 @@
           </div>
         </div>
       </div>
+
+      <!-- MODAL -->
+      <div class="modal" id="modal1">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <p>Change to</p>
+          </header>
+          <section class="modal-content">
+            <img
+              class="achievementImg"
+              src="../static/achievementimages/level10.png"
+            />
+            <img
+              class="achievementImg"
+              src="../static/achievementimages/check.png"
+            />
+            <img
+              class="achievementImg"
+              src="../static/achievementimages/educated.png"
+            />
+            <img
+              class="achievementImg"
+              src="../static/achievementimages/books.png"
+            />
+            <img
+              class="achievementImg"
+              src="../static/achievementimages/reading.png"
+            />
+          </section>
+        </div>
+      </div>
+
+      <!-- NAVIGATION SECTION -->
       <div class="navigationSection">
         <div class="navigationModal">
           <a class="rounded-button" href="#setting">
@@ -122,4 +156,5 @@
       </div>
     </footer>
   </body>
+  <script src="../js/profile.js"></script>
 </html>

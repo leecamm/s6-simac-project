@@ -145,3 +145,81 @@ a #buttonText {
   color: #8a8a8a;
   text-decoration: none;
 }
+
+.open-modal {
+  font-weight: bold;
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #afafaf;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content .achievementImg {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.modal-header .modal-close {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
