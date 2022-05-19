@@ -308,11 +308,11 @@ a #buttonText {
   margin-right: 20px;
   margin-top: 20px;
 }
-ul {
+.skill-section ul {
   overflow: hidden;
   margin-top: 15px;
 }
-li {
+.skill-section li {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
