@@ -1,175 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== BOXICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="../style/index.css" />
     <link rel="stylesheet" href="../style/chat.css" />
 
     <title>Teamnology</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="./profile.html">
-                <img src="../static/icons/profile.png" alt="" class="nav__logo" />
-            </a>
-            <a href="./index.html">
-                <img src="../static/icons/SimacLogo.png" alt="" class="nav__logo" />
-            </a>
-            <a href="./achievements.html">
-                <img src="../static/icons/Achievement.png" alt="" class="nav__logo" />
-            </a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="bx bx-home-alt nav__icon"></i>
-                            <span class="nav__name">Home</span>
-                        </a>
-                    </li>
+      <nav class="nav container">
+        <a href="./profile.html">
+          <img src="../static/icons/profile.png" alt="" class="nav__logo" />
+        </a>
+        <a href="./index.html">
+          <img src="../static/icons/SimacLogo.png" alt="" class="nav__logo" />
+        </a>
+        <a href="./achievements.html">
+          <img src="../static/icons/Achievement.png" alt="" class="nav__logo" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="bx bxs-hand-up nav__icon"></i>
-                            <span class="nav__name">Swipe</span>
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="./swipe.html" class="nav__link">
+                <i class="bx bxs-hand-up nav__icon"></i>
+                <span class="nav__name">Swipe</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="bx bx-calendar bx-sm nav__icon"></i>
-                            <span class="nav__name">Calendar</span>
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-calendar bx-sm nav__icon"></i>
+                <span class="nav__name">Calendar</span>
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="bx bx-chat nav__icon"></i>
-                            <span class="nav__name">Chat</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            <li class="nav__item">
+              <a href="./chat.html" class="nav__link active-link">
+                <i class="bx bx-chat nav__icon"></i>
+                <span class="nav__name">Chat</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!--=============== YOUR CODE HERE ===============-->
-        <div class="devidertop"></div>
-        <div id="chatpagecontainer">
-            <p class="titles">Matches</p>
-            <div id="yourmatches">
-                <div class="match"onclick="OpenChatModal(`liam`)">
-                    <img class="matchimage" src="../static/chatimages/liam.jpg">
-                    <p>Liam</p>
-                </div>
-                <div class="match" onclick="OpenChatModal(`john`)">
-                    <img class="matchimage" src="../static/chatimages/john.jpg">
-                    <p>John</p>
-                </div>
-                <div class="match"onclick="OpenChatModal(`mary`)">
-                    <img class="matchimage" src="../static/chatimages/mary.jpg">
-                    <p>Mary</p>
-                </div>
-                <div class="match" onclick="OpenChatModal(`claire`)">
-                    <img class="matchimage" src="../static/chatimages/claire.jpg">
-                    <p>Claire</p>
-                </div>
-                <div class="match" onclick="OpenChatModal(`bob`)">
-                    <img class="matchimage" src="../static/chatimages/bob.jpg">
-                    <p>Bob</p>
-                </div>
-                <div class="match" onclick="OpenChatModal(`frank`)">
-                    <img class="matchimage" src="../static/chatimages/frank.jpg">
-                    <p>Frank</p>
-                </div>
-                <div class="match" onclick="OpenChatModal(`bart`)">
-                    <img class="matchimage" src="../static/chatimages/bart.jpg">
-                    <p>Bart</p>
-                </div>
-            </div>
-            <div id="messages">
-                <p class="titles">Messages</p>
-                <div class="chat" onclick="OpenChatModal(`liam`)">
-                    <div class="timesent">10:30</div>
-                    <img class="chatpic" src="../static/chatimages/bob.jpg">
-                    <div class="chattext">
-                        <strong class="name">Liam</strong>
-                        <p class="messagepreview">Sounds perfect</p>
-                    </div>
-                </div>
-                <div class="chat" onclick="OpenChatModal(`john`)">
-                    <div class="timesent">12:13</div>
-                    <img class="chatpic" src="../static/chatimages/john.jpg">
-                    <div class="chattext">
-                        <strong class="name">John</strong>
-                        <p class="messagepreview">When are you free</p>
-                    </div>
-                </div>
-                <div class="chat" onclick="OpenChatModal(`frank`)">
-                    <div class="timesent">Yesterday</div>
-                    <img class="chatpic" src="../static/chatimages/frank.jpg">
-                    <div class="chattext">
-                        <strong class="name">Frank</strong>
-                        <p class="messagepreview">What's your opinion on this</p>
-                    </div>
-                </div>
-                <div class="chat" onclick="OpenChatModal(`bart`)">
-                    <div class="timesent">10-5-2022</div>
-                    <img class="chatpic" src="../static/chatimages/bart.jpg">
-                    <div class="chattext">
-                        <strong class="name">Bart</strong>
-                        <p class="messagepreview">Nice weather, huh?</p>
-                    </div>
-                </div>
-            </div>
+      <!--=============== YOUR CODE HERE ===============-->
+      <div class="devidertop"></div>
+      <div id="chatpagecontainer">
+        <p class="titles">Matches</p>
+        <div id="yourmatches">
+          <div class="match" onclick="OpenChatModal(`liam`)">
+            <img class="matchimage" src="../static/chatimages/liam.jpg" />
+            <p>Liam</p>
+          </div>
+          <div class="match" onclick="OpenChatModal(`john`)">
+            <img class="matchimage" src="../static/chatimages/john.jpg" />
+            <p>John</p>
+          </div>
+          <div class="match" onclick="OpenChatModal(`mary`)">
+            <img class="matchimage" src="../static/chatimages/mary.jpg" />
+            <p>Mary</p>
+          </div>
+          <div class="match" onclick="OpenChatModal(`claire`)">
+            <img class="matchimage" src="../static/chatimages/claire.jpg" />
+            <p>Claire</p>
+          </div>
+          <div class="match" onclick="OpenChatModal(`bob`)">
+            <img class="matchimage" src="../static/chatimages/bob.jpg" />
+            <p>Bob</p>
+          </div>
+          <div class="match" onclick="OpenChatModal(`frank`)">
+            <img class="matchimage" src="../static/chatimages/frank.jpg" />
+            <p>Frank</p>
+          </div>
+          <div class="match" onclick="OpenChatModal(`bart`)">
+            <img class="matchimage" src="../static/chatimages/bart.jpg" />
+            <p>Bart</p>
+          </div>
         </div>
+        <div id="messages">
+          <p class="titles">Messages</p>
+          <div class="chat" onclick="OpenChatModal(`liam`)">
+            <div class="timesent">10:30</div>
+            <img class="chatpic" src="../static/chatimages/bob.jpg" />
+            <div class="chattext">
+              <strong class="name">Liam</strong>
+              <p class="messagepreview">Sounds perfect</p>
+            </div>
+          </div>
+          <div class="chat" onclick="OpenChatModal(`john`)">
+            <div class="timesent">12:13</div>
+            <img class="chatpic" src="../static/chatimages/john.jpg" />
+            <div class="chattext">
+              <strong class="name">John</strong>
+              <p class="messagepreview">When are you free</p>
+            </div>
+          </div>
+          <div class="chat" onclick="OpenChatModal(`frank`)">
+            <div class="timesent">Yesterday</div>
+            <img class="chatpic" src="../static/chatimages/frank.jpg" />
+            <div class="chattext">
+              <strong class="name">Frank</strong>
+              <p class="messagepreview">What's your opinion on this</p>
+            </div>
+          </div>
+          <div class="chat" onclick="OpenChatModal(`bart`)">
+            <div class="timesent">10-5-2022</div>
+            <img class="chatpic" src="../static/chatimages/bart.jpg" />
+            <div class="chattext">
+              <strong class="name">Bart</strong>
+              <p class="messagepreview">Nice weather, huh?</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- CHATMODAL with text -->
-        <div id="chatmodal">
-            <div class="devidertop"></div>
-            <div id="chatheader">
-                <img id="backbuttonicon" onclick="CloseChatModal()" src="../static/chatimages/backbuttonicon.png">
-                <img class="chatpic" id="infopic" src="../static/chatimages/bob.jpg">
-                <div id="chatname">Liam</div>
-            </div>
-            <div id="chatcontainer">
-                <div class="message">hey</div>
-                <div class="message">i saw you were good at presentations</div>
-                <div class="message">can you help me get better at them</div>
-                <div class="message sentmessage">yeah sure</div>
-                <div class="message sentmessage">after lunch today?</div>
-                <div class="message">sounds perfect</div>
-            </div>
-            <div id="chatbox">
-                <img id="emojiicon" src="../static/chatimages/emojiicon.png">
-                <input id="chatinput" type="text" placeholder="Message">
-                <img id="sendicon" src="../static/chatimages/sendicon.png">
-            </div>
+      <!-- CHATMODAL with text -->
+      <div id="chatmodal">
+        <div class="devidertop"></div>
+        <div id="chatheader">
+          <img
+            id="backbuttonicon"
+            onclick="CloseChatModal()"
+            src="../static/chatimages/backbuttonicon.png"
+          />
+          <img
+            class="chatpic"
+            id="infopic"
+            src="../static/chatimages/bob.jpg"
+          />
+          <div id="chatname">Liam</div>
         </div>
+        <div id="chatcontainer">
+          <div class="message">hey</div>
+          <div class="message">i saw you were good at presentations</div>
+          <div class="message">can you help me get better at them</div>
+          <div class="message sentmessage">yeah sure</div>
+          <div class="message sentmessage">after lunch today?</div>
+          <div class="message">sounds perfect</div>
+        </div>
+        <div id="chatbox">
+          <img id="emojiicon" src="../static/chatimages/emojiicon.png" />
+          <input id="chatinput" type="text" placeholder="Message" />
+          <img id="sendicon" src="../static/chatimages/sendicon.png" />
+        </div>
+      </div>
     </main>
 
     <script>
-        const OpenChatModal = (name) =>{
-            document.getElementById("chatmodal").style.left = "0px";
-            document.getElementById("chatname").innerHTML = name;
-            document.getElementById("infopic").src = "../static/chatimages/" + name + ".jpg";
-        }
-        const CloseChatModal = () =>{
-            document.getElementById("chatmodal").style.left = "100vw";
-        }
+      const OpenChatModal = (name) => {
+        document.getElementById("chatmodal").style.left = "0px";
+        document.getElementById("chatname").innerHTML = name;
+        document.getElementById("infopic").src =
+          "../static/chatimages/" + name + ".jpg";
+      };
+      const CloseChatModal = () => {
+        document.getElementById("chatmodal").style.left = "100vw";
+      };
     </script>
     <!--=============== MAIN JS ===============-->
     <script src="../js/main.js"></script>
-</body>
-
+  </body>
 </html>
