@@ -223,3 +223,159 @@ a #buttonText {
   visibility: visible;
   opacity: 1;
 }
+
+/* Edit Profile Page */
+.photo-section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px 0 0px;
+}
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.btn-add {
+  width: 100%;
+  height: 42%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.bio-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 150px;
+}
+
+.bio-content {
+  width: 100%;
+  margin-top: 15px;
+  height: 10px;
+}
+.bio-content input {
+  width: 100%;
+  height: 100px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+.bio-content input::placeholder {
+  text-align: start;
+}
+
+/* Info SECTION */
+.info-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.info-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/* SKILL SECTION */
+.skill-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+ul {
+  overflow: hidden;
+  margin-top: 15px;
+}
+li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #a80127;
+  background-color: #a80127;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+.button-add {
+  height: 100%;
+  padding: 10px 15px 10px 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #c1c1c1;
+  font-size: 16px;
+}
+
+.certificate-list {
+  display: flex;
+}
+
+.certificate {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificate-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.certificate-text #date {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile-footer {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+.profile-footer p {
+  text-decoration: underline;
+  font-size: 16px;
+}
+.button-save {
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  background-color: #a80127;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+}
