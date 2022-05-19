@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/profilePage.css" />
+
+    <title>Adjust Profile</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="profileNavbar">
+      <a id="backbutton" onclick="history.back()"
+        ><i class="bx bx-chevron-left bx-md"></i
+      ></a>
+      <p id="pagetitle">Profile Edit</p>
+    </div>
+    <main class="content">
+      <div class="photo-section">
+        <h2>My photos</h2>
+        <div class="row">
+          <div class="column">
+            <img src="../static/images/Portrait.png" />
+          </div>
+          <div class="column">
+            <img src="../static/images/Landscape.png" />
+            <button type="button" class="btn-add">
+              <i class="bx bx-plus bx-md"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio Section -->
+      <div class="bio-section">
+        <h2>My bio</h2>
+        <div class="bio-content">
+          <input
+            type="textarea"
+            class="bio-area"
+            placeholder="Briefly introduce about yourself..."
+          />
+        </div>
+      </div>
+      <!-- Info section -->
+      <div class="info-section">
+        <h2>My info</h2>
+        <div class="info-items">
+          <div class="info-item">
+            <i class="bx bxs-briefcase bx-md"></i>
+            <p>Branch</p>
+          </div>
+          <div class="info-item">
+            <p>Technology</p>
+            <i class="bx bx-chevron-right bx-md"></i>
+          </div>
+        </div>
+        <div class="info-items">
+          <div class="info-item">
+            <i class="bx bxs-graduation bx-md"></i>
+            <p>Education</p>
+          </div>
+          <div class="info-item">
+            <p>Master Degree</p>
+            <i class="bx bx-chevron-right bx-md"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILL SECTION -->
+      <div class="skill-section">
+        <h2>My skills</h2>
+        <ul class="skill-list">
+          <li><i class="bx bxs-star"></i>&nbsp;Leadership</li>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Presentation</li>
+        </ul>
+        <button type="button" class="button-add">Add new skills</button>
+      </div>
+
+      <!-- INTEREST SECTION -->
+      <div class="skill-section">
+        <h2>My interestes</h2>
+        <ul class="skill-list">
+          <li>Problem Solving</li>
+        </ul>
+        <button type="button" class="button-add">Add</button>
+      </div>
+      <!-- CERTIFICATE SECTION -->
+      <div class="skill-section">
+        <h2>My certificates</h2>
+        <div class="certificate-list">
+          <div class="certificate">
+            <i class="bx bxl-google bx-lg"></i>
+            <div class="certificate-text">
+              <p id="name">Questioning Skill</p>
+              <span id="date">03/2022</span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="button-add">Add</button>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="profile-footer">
+        <p>Cancel</p>
+        <button type="button" class="button-save">Save</button>
+      </div>
+    </main>
+  </body>
+</html>

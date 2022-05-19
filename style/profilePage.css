@@ -1,0 +1,381 @@
+body {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* display: flex; */
+}
+
+/* HEADER */
+.profileNavbar {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+#backbutton {
+  margin-left: 10px;
+  position: fixed;
+}
+
+#pagetitle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.content {
+  padding-top: 10vh;
+}
+
+/* INFO SECTION */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#name {
+  padding-top: 10px;
+}
+#role {
+  padding-top: 5px;
+  font-size: 20px;
+  color: #c7002b;
+}
+#description {
+  padding-top: 6px;
+  font-size: 16px;
+}
+
+.avatar {
+  width: 188px;
+  height: 188px;
+  margin: 10px;
+  border: 10px solid #c7002b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ACHIEVEMENT SECTION */
+.achievementSection {
+  margin: 40px 20px 20px 20px;
+}
+#achievementText {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.achievementModal {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px 20px 10px;
+  margin: 15px 10px 10px 10px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+
+.achievementImg {
+  width: 26%;
+}
+
+/* LEVEL SECTION */
+.levelSection {
+  margin-top: 30px;
+  margin-right: 10px;
+}
+.levelText {
+  display: flex;
+  justify-content: space-between;
+}
+
+#progressText {
+  font-size: 16px;
+  font-style: italic;
+}
+#progressTextExp {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.progress {
+  margin-top: 15px;
+  height: 15px;
+  width: 100%;
+  border: 1px solid #1f1f1f;
+  background-color: white;
+  border-radius: 15px;
+}
+.progress .color {
+  background-color: #c7002b;
+  width: 70%;
+  height: 13px;
+  border-radius: 15px;
+}
+
+/* NAVIGATION SECTION */
+.navigationSection {
+  margin: 30px 1px 100px 1px;
+  border-radius: 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-image: linear-gradient(#f3f3f3, white);
+}
+
+.navigationModal {
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  justify-content: space-between;
+}
+
+.rounded-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+a #buttonText {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #8a8a8a;
+  text-decoration: none;
+}
+
+.open-modal {
+  font-weight: bold;
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #afafaf;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content .achievementImg {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.modal-header .modal-close {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Edit Profile Page */
+.photo-section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px 0 0px;
+}
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.btn-add {
+  width: 100%;
+  height: 42%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.bio-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 150px;
+}
+
+.bio-content {
+  width: 100%;
+  margin-top: 15px;
+  height: 10px;
+}
+.bio-content input {
+  width: 100%;
+  height: 100px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.125);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+.bio-content input::placeholder {
+  text-align: start;
+}
+
+/* Info SECTION */
+.info-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.info-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/* SKILL SECTION */
+.skill-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.skill-section ul {
+  overflow: hidden;
+  margin-top: 15px;
+}
+.skill-section li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #a80127;
+  background-color: #a80127;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+.button-add {
+  height: 100%;
+  padding: 10px 15px 10px 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #c1c1c1;
+  font-size: 16px;
+}
+
+.certificate-list {
+  display: flex;
+}
+
+.certificate {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificate-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.certificate-text #date {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile-footer {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+.profile-footer p {
+  text-decoration: underline;
+  font-size: 16px;
+}
+.button-save {
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  background-color: #a80127;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+}
