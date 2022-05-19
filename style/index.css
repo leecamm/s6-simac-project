@@ -52,6 +52,10 @@ body {
   color: var(--text-color);
 }
 
+i {
+  font-style: normal;
+}
+
 ul {
   list-style: none;
 }
@@ -67,7 +71,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 4.5rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .section-small {
@@ -158,6 +162,10 @@ img {
 
 .card-row-img > img {
   width: fit-content;
+}
+
+.general-content {
+  margin-bottom: 7rem;
 }
 
 /*=============== LAYOUT ===============*/
