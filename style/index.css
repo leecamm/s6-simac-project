@@ -151,7 +151,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   align-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
 }
 
 .tags {
