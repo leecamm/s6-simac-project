@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+.general-content{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-calendar {
+  /* margin-right: 10px;
+  margin-left: 10px; */
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.month {
+  margin-top: 6vh;
+  padding: 70px 25px;
+  width: 100%;
+  background: rgb(205, 71, 71);
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+li{
+  color: #777;
+}
+
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
+.days li .active {
+  padding: 2px 3px 2px 3px ;
+  background: rgb(205, 71, 71);
+  color: white !important;
+  border-radius: 20px;
+}
+.days li .meeting {
+  padding: 2px 3px 2px 3px ;
+  background: rgb(196, 196, 196);
+  color: white !important;
+  border-radius: 20px;
+}
+
+.othermonth{
+  color:rgb(212, 212, 212);
+}
+
+/* MEETING MODAL */
+
+.meetingmodal{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  height: 60vh;
+  width: 70vw;
+  background-color: rgb(255, 255, 255);
+  top: 21vh;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.382);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.date{
+  margin: 10px;
+}
+.daynum{
+  font-size: 2em;
+}
+.day{
+  font-size: .7em;
+}
+
+.appointment{
+  padding: 10px;
+  border-top-style: solid;
+  border-width: 1px;
+}
+
+.apptime{
+  font-size: 0.7em;
+}
+
+.closemodal{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  transform: rotate(-45deg);
+  font-size: 1.6em;
+}
+
+.joinbutton{
+  background-color: #5045eb; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}

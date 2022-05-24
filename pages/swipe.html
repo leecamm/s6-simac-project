@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== BOXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../style/index.css" />
-    <link rel="stylesheet" href="../style/swipe.css" />
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 
-    <title>Teamnology</title>
-  </head>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/swipe.css" />
 
-  <body>
-    <!--=============== HEADER ===============-->
+  <title>Teamnology</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <main>
     <div class="general-content">
       <header class="header" id="header">
         <nav class="nav container">
-          <a href="profile.html">
+          <a href="../pages/profile.html">
             <img src="../static/icons/profile.png" alt="" class="nav__logo" />
           </a>
-          <a href="./index.html">
+          <a href="../pages/index.html">
             <img src="../static/icons/SimacLogo.png" alt="" class="nav__logo" />
           </a>
-          <a href="./achievements.html">
-            <img
-              src="../static/icons/Achievement.png"
-              alt=""
-              class="nav__logo"
-            />
+          <a href="../pages/achievements.html">
+            <img src="../static/icons/Achievement.png" alt="" class="nav__logo" />
           </a>
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="index.html" class="nav__link">
+                <a href="../pages/index.html" class="nav__link">
                   <i class="bx bx-home-alt nav__icon"></i>
                   <span class="nav__name">Home</span>
                 </a>
               </li>
 
               <li class="nav__item">
-                <a href="swipe.html" class="nav__link active-link">
+                <a href="../pages/swipe.html" class="nav__link active-link">
                   <i class="bx bxs-hand-up nav__icon"></i>
                   <span class="nav__name">Swipe</span>
                 </a>
               </li>
 
               <li class="nav__item">
-                <a href="#skills" class="nav__link">
+                <a href="../pages/calender.html" class="nav__link">
                   <i class="bx bx-calendar bx-sm nav__icon"></i>
                   <span class="nav__name">Calendar</span>
                 </a>
               </li>
 
               <li class="nav__item">
-                <a href="./chat.html" class="nav__link">
+                <a href="../pages/chat.html" class="nav__link">
                   <i class="bx bx-chat nav__icon"></i>
                   <span class="nav__name">Chat</span>
                 </a>
@@ -70,55 +65,85 @@
         </nav>
       </header>
 
-      <main>
-        <!--=============== YOUR CODE HERE ===============-->
+      <!--=============== YOUR CODE HERE ===============-->
 
-        <!--=============== HOME ===============-->
-        <section class="container section" id="home">
-          <div class="tinder">
-            <div class="tinder--status">
-              <i class="fa fa-remove">&#10006;</i>
-              <i class="fa fa-heart">&#10084;</i>
+      <!--=============== HOME ===============-->
+      <section class="container section" id="home">
+        <div class="tinder">
+          <div class="tinder--status">
+            <i class="fa fa-remove">&#10006;</i>
+            <i class="fa fa-heart">&#10084;</i>
+          </div>
+
+          <div class="tinder--cards">
+            <div class="tinder--card">
+              <img src="../static/chatimages/bart.jpg" />
+              <h3>Bart</h3>
+              <div class="skillsdiv">
+                <p class="skills">presenting</p>
+                <p class="skills">storytelling</p>
+                <p class="skills">first impressions</p>
+              </div>
+              <p>I'm Bart, I'm good at presenting and storytelling. I would like to learn more about stress reduction.
+              </p>
             </div>
-
-            <div class="tinder--cards">
-              <div class="tinder--card">
-                <img src="https://placeimg.com/600/300/people" />
-                <h3>Demo card 1</h3>
-                <p>This is a demo for Tinder like swipe cards</p>
+            <div class="tinder--card">
+              <img src="../static/chatimages/liam.jpg" />
+              <h3>Bob</h3>
+              <div class="skillsdiv">
+                <p class="skills">presenting</p>
+                <p class="skills">storytelling</p>
+                <p class="skills">first impressions</p>
               </div>
-              <div class="tinder--card">
-                <img src="https://placeimg.com/600/300/animals" />
-                <h3>Demo card 2</h3>
-                <p>This is a demo for Tinder like swipe cards</p>
-              </div>
-              <div class="tinder--card">
-                <img src="https://placeimg.com/600/300/nature" />
-                <h3>Demo card 3</h3>
-                <p>This is a demo for Tinder like swipe cards</p>
-              </div>
-              <div class="tinder--card">
-                <img src="https://placeimg.com/600/300/tech" />
-                <h3>Demo card 4</h3>
-                <p>This is a demo for Tinder like swipe cards</p>
-              </div>
-              <div class="tinder--card">
-                <img src="https://placeimg.com/600/300/arch" />
-                <h3>Demo card 5</h3>
-                <p>This is a demo for Tinder like swipe cards</p>
-              </div>
+              <p>I'm Bob, I'm good at presenting and storytelling. I would like to learn more about stress reduction.
+              </p>
             </div>
-
-            <div class="tinder--buttons">
-              <button id="nope"><i class="fa fa-remove">&#10006;</i></button>
-              <button id="love"><i class="fa fa-heart">&#10084;</i></button>
+            <div class="tinder--card">
+              <img src="../static/chatimages/claire.jpg" />
+              <h3>Claire</h3>
+              <div class="skillsdiv">
+                <p class="skills">presenting</p>
+                <p class="skills">storytelling</p>
+                <p class="skills">first impressions</p>
+              </div>
+              <p>I'm Claire, I'm good at presenting and storytelling. I would like to learn more about stress reduction.
+              </p>
+            </div>
+            <div class="tinder--card">
+              <img src="../static/chatimages/mary.jpg" />
+              <h3>Mary</h3>
+              <div class="skillsdiv">
+                <p class="skills">presenting</p>
+                <p class="skills">storytelling</p>
+                <p class="skills">first impressions</p>
+              </div>
+              <p>I'm Mary, I'm good at presenting and storytelling. I would like to learn more about stress reduction.
+              </p>
+            </div>
+            <div class="tinder--card">
+              <img src="../static/chatimages/liam.jpg" />
+              <h3>Bob</h3>
+              <div class="skillsdiv">
+                <p class="skills">presenting</p>
+                <p class="skills">storytelling</p>
+                <p class="skills">first impressions</p>
+              </div>
+              <p>I'm Bob, I'm good at presenting and storytelling. I would like to learn more about stress reduction.
+              </p>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
-    <!--=============== MAIN JS ===============-->
-    <script src="../js/main.js"></script>
-    <script src="../js/swipe.js"></script>
-  </body>
+
+          <div class="tinder--buttons">
+            <button id="nope"><i class="fa fa-remove">&#10006;</i></button>
+            <button id="love"><i class="fa fa-heart">&#10084;</i></button>
+          </div>
+        </div>
+      </section>
+  </main>
+  </div>
+  <!--=============== MAIN JS ===============-->
+  <script src="../js/main.js"></script>
+  <script src="../js/swipe.js"></script>
+</body>
+
 </html>
